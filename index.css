@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(32, 29, 29);
+    margin-top: 150px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.container{
+    border: 8px solid grey;
+    padding-bottom: 50px;
+    background-color:black;
+}
+h2{
+    color: aliceblue;
+    text-align: center;
+}
+#in{
+    text-align: center;
+}
+#output{
+    color: aliceblue;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top:40px ;
+    font-style: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+}
+.foo{
+    padding-top: 3px;
+   border: 6px solid grey ;
+   background-color:grey;
+}
