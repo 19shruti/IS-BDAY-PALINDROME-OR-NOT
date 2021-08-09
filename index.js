@@ -152,9 +152,11 @@ return [count,nextDate];
 var input=document.getElementById("bday-input");
 var btn=document.getElementById("show-btn");
 var result=document.getElementById("output");
+var po =document.getElementById("po");
 function clickHandler(e)
 {
     
+
      var bdayStr=input.value;
      if(bdayStr!=='')
      {
@@ -172,7 +174,13 @@ function clickHandler(e)
       }
       else{
           var [count , nextdate]=getNextPalindromeDte(date);
-          result.innerHTML="Your birthday is not Palindrome "+"<br> The next palindrome date is "+nextdate.day+"-"+nextdate.month+"-"+nextdate.year+" you missed by "+count+"days";
+          po.innerHTML=`<img style="width:60px; height:60px" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b6e0b072897469.5bf6e79950d23.gif"/> `;
+          var interval=setInterval(function(){
+              result.innerHTML="Your birthday is not Palindrome "+"<br> The next palindrome date is "+nextdate.day+"-"+nextdate.month+"-"+nextdate.year+" you missed by "+count+"days";
+              clearInterval(interval);
+              po.style.display="none";
+          },3000);
+   
       }
      }
 }
